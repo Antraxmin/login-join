@@ -3,24 +3,17 @@ import React from 'react';
 
 function Loginform() {
   return (
-    <div>
-        <h1>LOGIN</h1>
-        <form>
-            <div>
-                <input type="text" placeholder="아이디"></input>
-            </div>
-            <div>
-                <input type="text" placeholder="비밀번호"></input>
-            </div>
-            <div>
-                <button type="submit">LOGIN</button>
-            </div>
-            <div>
-                아이디 찾기
-                비밀번호 찾기
-            </div>
-        </form>
-    </div>
+    <div className="login-page">
+    <div className="form">
+    <h1>로그인</h1>
+    <form className="login-form">
+      <input type="text" placeholder="아이디"/>
+      <input type="password" placeholder="비밀번호"/>
+      <button>login</button>
+      <p className="message">회원이 아니신가요? <a href="#">회원가입</a></p>
+    </form>
+  </div>
+</div>
   );
 }
 
